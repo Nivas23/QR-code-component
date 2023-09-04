@@ -5,24 +5,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | QR code component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    html{
+      height:100%;
+    }
+    body{
+      background-color: hsl(212, 45%, 89%);
+      display: flex;
+      /* width:clamp(375px,100%,1440px); */
+      justify-content: center;
+      align-items: center;
+      min-height:100%;
+    }
+    .container{
+      background-color: hsl(0, 0%, 100%);
+      border-radius: 15px;
+      text-align: center;      
+    }
+    section{
+      padding: 12px;
+    }
+    img{
+      border-radius: 8px;
+      height:225px;
+    }
+    .head{
+      font-size:17px;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      color: hsl(218, 44%, 22%);
+      margin:0px;
+      padding-top: 15px;
+    }
+    .shead{
+      font-size: 12px;
+      font-family: 'Outfit', sans-serif;
+      font-weight:400;
+      color: hsl(220, 15%, 55%);
+      padding-bottom: 7px;
+    }
+
+
   </style>
 </head>
 <body>
-
+<!-- 
   Improve your front-end skills by building projects
 
   Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">NivasTS</a>.
+  </div> -->
+  <div class="container">
+    <section>
+    <img src="images/image-qr-code.png" alt="No image">
+    <p class="head">Improve your front-end<br>skills by building projects</p>
+    <p class="shead">Scan the QR code to visit Frontend<br>Mentor and take your coding skills to<br>the next level</p>
+  </section>
   </div>
+
+
 </body>
 </html>
